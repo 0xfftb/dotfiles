@@ -117,6 +117,8 @@ alias pyrun="source bin/activate && python3 src/main.py"
 alias vs="code ."
 alias tksv="tmux kill-server"
 
+alias nvimconf="code ~/.config/nvim"
+
 alias back="cd ~/docs/enigma/backend"
 alias mkt="cd ~/docs/enigma/marketplace_v2"
 
