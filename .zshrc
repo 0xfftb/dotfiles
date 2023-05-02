@@ -110,8 +110,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias cls="clear"
 alias venv="python3 -m venv ."
-alias pv="cd ~/docs/peacevoid"
-alias en="cd ~/docs/enigma"
+alias pv="cd ~/work/peacevoid"
+alias en="cd ~/work/enigma"
 alias p="cd ~/docs/projects"
 alias pyrun="source bin/activate && python3 src/main.py"
 alias vs="code ."
@@ -119,8 +119,9 @@ alias tksv="tmux kill-server"
 
 alias nvimconf="code ~/.config/nvim"
 
-alias back="cd ~/docs/enigma/backend"
-alias mkt="cd ~/docs/enigma/marketplace_v2"
+alias back="cd ~/work/enigma/backend"
+alias mkt="cd ~/work/enigma/marketplace_v2"
+alias wond="cd ~/work/wonderland"
 
 # FORGE ALIASES
 alias fgt="forge test"
