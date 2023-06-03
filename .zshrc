@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize copyfile docker docker-compose git-flow ipfs lol node npm python rust sublime sudo tmux vscode)
+plugins=(git colorize copyfile docker docker-compose git-flow ipfs lol node npm python rust sublime sudo tmux vscode archlinux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -132,16 +132,12 @@ alias fgi="forge init"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-export PATH="$PATH:/home/mmolinari/.foundry/bin:/home/mmolinari/.local/bin"
-
-export PATH="$PATH:/home/mmolinari/.bifrost/bin"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="/home/mmolinari/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="$HOME/.local/bin:$PATH"
